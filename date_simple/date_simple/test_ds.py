@@ -6,7 +6,7 @@ Created on Mon Apr  9 21:45:34 2018
 @author: allisone
 """
 
-import ds
+import date_simple as ds
 import datetime
 import pytest
 

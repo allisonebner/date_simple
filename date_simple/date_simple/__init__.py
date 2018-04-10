@@ -23,9 +23,9 @@ def get_date_string(date_object=None, format='YYYY-mm-dd'):
         format = format.replace(item[0], item[1])
     if date_object == None:
         date = datetime.date.today()
-else:
-    if not isinstance(date_object, datetime.date):
-        raise TypeError('must be in date format')
+    else:
+        if not isinstance(date_object, datetime.date):
+            raise TypeError('must be in date format')
         date = date_object
     return date.strftime(format)
 
